@@ -78,6 +78,10 @@ open class CustomConfirmDialog private constructor(
         binding.btnConfirm.text = builder.getButtonConfirmText()
         binding.btnCancel.text = builder.getButtonCancelText()
 
+        builder.getMainColor()?.let {
+            binding.btnCancel.setTextColor(ContextCompat.getColor(context , it))
+        }
+
         val colorInt: Int? = builder.getMainColor()?.let { ContextCompat.getColor(context, it) }
         val csl = colorInt?.let { ColorStateList.valueOf(it) }
         binding.btnCancel.strokeColor = csl
@@ -148,6 +152,11 @@ open class CustomConfirmDialog private constructor(
             dialogConfirm?.dismiss()
         }
 
+        binding.imgClose.setOnClickListener {
+            builder.getDialogButtonsCallBack()?.handleWhenDialogDismiss()
+            dialogConfirm?.dismiss()
+        }
+
         dialogConfirm?.setOnCancelListener {
             builder.getDialogButtonsCallBack()?.handleWhenDialogDismiss()
         }
@@ -168,7 +177,7 @@ open class CustomConfirmDialog private constructor(
         private var cornerButtonsRadius: Int? = null
 
         private var buttonConfirmText: String? = null
-        private var buttonConfirmTextColor: Int? = null
+        private var buttonConfirmTextColor: Int? = R.color.white
 
         private var mainColor: Int? = null
 

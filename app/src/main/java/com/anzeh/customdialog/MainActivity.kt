@@ -12,28 +12,25 @@ class MainActivity : AppCompatActivity() {
         CustomConfirmDialog
             .Builder()
             .setContext(this)
-            .setTitle("Title")
-            .setSubTitle("Sub Title")
-            .setEnableToDismiss(true)
-            .setDialogButtonsCallBack(object : ConfirmDialogCallBack {
-                override fun handleClickConfirmButton() {
-                }
-
-                override fun handleClickCancelButton() {
-                }
-
-                override fun handleWhenDialogDismiss() {
-
-                }
-
-            })
-            .setMainColor(R.color.black)
-            .setIcon(R.drawable.ic_check)
-            .setCornerButtonsRadius(40)
-            .setCornerRadius(20)
-            .setSubTitle("Sub Title")
+            .setTitle("Delete Item")
+            .setSubTitle("Are Your sure you want\ndelete this item?")
             .setButtonCancelText("CANCEL")
             .setButtonConfirmText("CONFIRM")
+            .setEnableToDismiss(true)
+            .setDialogButtonsCallBack(object : ConfirmDialogCallBack {
+                override fun handleClickConfirmButton() {}
+
+                override fun handleClickCancelButton() {}
+
+                override fun handleWhenDialogDismiss() {}
+
+            })
+            .setMainColor(R.color.delete_color)
+            .setIcon(R.drawable.ic_delete)
+            .setCornerButtonsRadius(40)
+            .setCornerRadius(20)
+            .build()
+            .showConfirmDialog()
 
     }
 }
