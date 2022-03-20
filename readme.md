@@ -1,6 +1,7 @@
 
 # Explain 
-This library displays a dialog to confirm a specific action, such as deleting an item or adding an item.
+An application does not have a dialog box to confirm an event.
+This library is designed in a way that makes it easy for the developer to use a dialog box to confirm a specific event with a good and comfortable design, where you can modify what you want on the design to suit the shape of your application design.
 
 # Screenshots
 
