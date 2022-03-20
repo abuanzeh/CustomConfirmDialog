@@ -1,4 +1,7 @@
 
+# Explain 
+This library displays a dialog to confirm a specific action, such as deleting an item or adding an item.
+
 # Show Confiem Custom Dialog
 
 ![Alt text](https://firebasestorage.googleapis.com/v0/b/recalcerview.appspot.com/o/Screenshot_20220320-162304_Custom_Confirm_Dialog%5B1%5D.jpg?alt=media&token=cc5a9556-bbe2-4e67-bde2-eb53eb77112a)
