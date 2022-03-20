@@ -30,11 +30,17 @@ implementation 'com.github.abuanzeh:CustomConfirmDialog:1.0.2'
  CustomConfirmDialog
             .Builder()
             .setContext(this)
+	    //set Title
             .setTitle("Delete Item")
+	    //setSubTitle
             .setSubTitle("Are Your sure you want\ndelete this item?")
+	    //set Cancel Button Title
             .setButtonCancelText("CANCEL")
+	    //set Confirm Button Title
             .setButtonConfirmText("CONFIRM")
+	    //set if user can dismiss dilog true or false 
             .setEnableToDismiss(true)
+	     //handle Clickes Buttons
             .setDialogButtonsCallBack(object : ConfirmDialogCallBack {
                 override fun handleClickConfirmButton() {}
 
@@ -43,10 +49,16 @@ implementation 'com.github.abuanzeh:CustomConfirmDialog:1.0.2'
                 override fun handleWhenDialogDismiss() {}
 
             })
+	    //set Main Color 
             .setMainColor(R.color.delete_color)
+	    //set Custom Color
             .setIcon(R.drawable.ic_delete)
+	    //set Corner Buttons Radius 
             .setCornerButtonsRadius(40)
+	    //set Corner background Dialog 
             .setCornerRadius(20)
+	    //setDialog Background
+	    .setDialogColorBackground(R.color.your_color)
             .build()
             .showConfirmDialog()   
 	    
