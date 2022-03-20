@@ -21,6 +21,9 @@ implementation 'com.github.abuanzeh:CustomConfirmDialog:1.0.0'
 
 ```
 
+# Example 
+Add it in your root build.gradle at the end of repositories:
+```
  CustomConfirmDialog
             .Builder()
             .setContext(this)
@@ -43,3 +46,5 @@ implementation 'com.github.abuanzeh:CustomConfirmDialog:1.0.0'
             .setCornerRadius(20)
             .build()
             .showConfirmDialog()   
+	    
+```	    
