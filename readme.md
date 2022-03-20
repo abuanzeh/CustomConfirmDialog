@@ -20,7 +20,8 @@ allprojects {
 ```
 Add the dependency :
 ```
-implementation 'com.github.abuanzeh:CustomConfirmDialog:1.0.0'
+implementation 'com.github.abuanzeh:CustomConfirmDialog:1.0.2'
+
 
 ```
 
