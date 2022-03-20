@@ -17,7 +17,7 @@ allprojects {
 ```
 Add the dependency :
 ```
-implementation 'com.github.abuanzeh:AnzehLibrary:1.0.5'
+implementation 'com.github.abuanzeh:CustomConfirmDialog:1.0.0'
 
 ```
 # Example 
