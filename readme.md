@@ -20,7 +20,7 @@ Add the dependency :
 implementation 'com.github.abuanzeh:CustomConfirmDialog:1.0.0'
 
 ```
-# Example 
+Example 
  CustomConfirmDialog
             .Builder()
             .setContext(this)
@@ -42,9 +42,4 @@ implementation 'com.github.abuanzeh:CustomConfirmDialog:1.0.0'
             .setCornerButtonsRadius(40)
             .setCornerRadius(20)
             .build()
-            .showConfirmDialog()
-
-    
-	    
-
-   
+            .showConfirmDialog()   
